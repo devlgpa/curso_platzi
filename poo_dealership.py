@@ -1,3 +1,4 @@
+
 class Vehículo:
     def __init__(self, marca, modelo, precio):
         self.marca = marca
