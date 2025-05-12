@@ -3,7 +3,7 @@ import random
 
 #Generar un numero entero aleatorio
 random_number = random.randint(1,10)
-print(random_number)
+print (random_number)
 
 #elegir colores aldeatorios
 colors = ["Rojo", "Azul", "Verde"]

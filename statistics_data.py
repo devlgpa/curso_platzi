@@ -4,6 +4,7 @@ import csv
 
 # Leer los datos de ventas mensuales desde un archivo CSV
 monthly_sales = {}
+#abrimos en modo lectura read r
 with open('monthly_sales.csv', mode='r') as file:
     reader = csv.DictReader(file)
     for row in reader:
@@ -32,7 +33,7 @@ print(f"La desviacion estandar es: {stdev_sales}")
 
 #Hallar la varianza
 variance_sales = statistics.variance(sales)
-print(f"La moda es: {variance_sales}")
+print(f"La varianza es: {variance_sales}")
 
 max_sales = max(sales)
 min_sales = min(sales)
