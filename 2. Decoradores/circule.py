@@ -3,7 +3,7 @@ class Circulo:
 
     def __init__(self, radio: float):
         self._radio = radio
-    #property convierte el metodo en un atributo 
+    #property permite acceder al metodo como si fuera un atributo 
     @property
     def area(self) -> float:
         return 3.1416 * self._radio ** 2
