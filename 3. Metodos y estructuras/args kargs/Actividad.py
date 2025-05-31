@@ -87,6 +87,7 @@ if descuentos == "si" or descuentos == "sí":
     descuent = int(input("¿De cuánto es el descuento (%): "))
     precios_enteros = [int(item["precio"]) for item in carrito]
     total_original = sum(precios_enteros)
+    #el * desempaquetara la lista ya que args no acepta listas solo argumentos
     total_con_descuento = calcular_total(*precios_enteros, descuento=descuent)
     
     print(f"\nTotal a pagar: ${total_original:.2f}")
