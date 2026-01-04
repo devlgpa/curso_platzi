@@ -1,21 +1,26 @@
 import utils
 
-keys, values = utils.get_population()
-print(keys, values)
-
 data = [
-    {
-     "Country": "Colombia", 
-     "Population": 500
-     },
-    {
-     "Country": "Bolivia", 
-     "Population": 300
-     },
-]
+        {
+        "Country": "Colombia", 
+        "Population": 500
+        },
+        {
+        "Country": "Bolivia", 
+        "Population": 300
+        },
+    ]
 
-country = input("Type the country name: ")
+def run():
+    keys, values = utils.get_population()
+    print(keys, values)
 
-result = utils.population_by_country(data, country)
+    country = input("Type the country name: ")
 
-print(result)
+    result = utils.population_by_country(data, country)
+
+    print(result)
+
+#si el main es ejecutado desde la terminal y se ejecuta el run
+if __name__ == "__main__":
+    run()
