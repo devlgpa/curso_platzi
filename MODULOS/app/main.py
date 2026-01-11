@@ -1,23 +1,22 @@
 import utils
-
-data = [
-        {
-        "Country": "Colombia", 
-        "Population": 500
-        },
-        {
-        "Country": "Bolivia", 
-        "Population": 300
-        },
-    ]
+import read_csv
+import charts
 
 def run():
-    keys, values = utils.get_population()
-    print(keys, values)
 
+    data = read_csv.read_csv('./MODULOS/app/data.csv')
     country = input("Type the country name: ")
 
     result = utils.population_by_country(data, country)
+
+    if len(result) > 0:
+        
+        country = result[0]
+
+        keys, values = utils.get_population(country)
+        charts.generate_bar_chart(keys, values)
+    else:
+        print("Country not found")
 
     print(result)
 
