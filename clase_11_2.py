@@ -9,3 +9,8 @@ if x > 10 or y > 25:                                       #la condicon or solo 
 
 if not x > 10:                                      #en este si no cumple por el not ejecutara la condicion como si dijera no es mayor que 10
     print ("X no es mayor que 10")
+
+a = {1,2}
+b = {2,3}
+
+print (a-b)                                       #diferencia entre conjuntos
