@@ -1,6 +1,4 @@
 
-from math import sin
-
 
 print('Hola "mundo"') # uso de comillas dobles dentro de comillas simples
 print("Hola 'mundo'") # uso de comillas simples dentro de comillas dobles
